@@ -1,0 +1,73 @@
+{% extends 'store/_Master.html' %}
+{% block title_tab %}Liên hệ{% endblock %}
+{% load static %}
+
+
+{% block content %}
+        
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'store:index' %}">Trang chủ</a></li>
+                <li class="breadcrumb-item active">Liên hệ</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Contact Start -->
+    <div class="contact">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h2>Cửa hàng của tôi</h2>
+                        <h3><i class="fa fa-map-marker"></i>860/16 Huỳnh Tấn Phát, phường Tân Phú, quận 7, TP.HCM</h3>
+                        <h3><i class="fa fa-envelope"></i>hadh31011999@gmail.com</h3>
+                        <h3><i class="fa fa-phone"></i>+ (84) 349 998 172</h3>
+                        <div class="social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Tên của bạn" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Địa chỉ E-mail" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tiêu đề" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Nội dung"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn" type="submit">Gửi thông tin</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2394748027764!2d106.73058930947059!3d10.72759528090378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752565caeb825f%3A0x8e71399d04c059c3!2zODU4IEh14buzbmggVOG6pW4gUGjDoXQsIFTDom4gUGjDuiwgUXXhuq1uIDcsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1630856971885!5m2!1sen!2s" class="map_sss" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+        
+{% endblock %}
