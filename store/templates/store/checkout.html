@@ -20,7 +20,8 @@
     <!-- Checkout Start -->
     <div class="checkout cart-page" style="padding-top: 0;">
         <div class="container-fluid">
-            <form action="{% url 'checkout:success' %}">
+            <form method="post" action="{% url 'checkout:success' %}">
+                {% csrf_token %}
                 <div class="row">
                     <div class="col-md-8" style="padding: 0">
                         <div class="col-lg-12">

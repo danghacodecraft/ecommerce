@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from cart.cart import Cart
 from store.my_module import *
 from .models import Order, OrderItem
+from django.views.decorators.http import require_POST
 from decimal import Decimal
 
 
@@ -9,13 +10,16 @@ def checkout(request):
     # Kiểm tra trạng thái đăng nhập của khách hàng
     session_status = check_session(request, 'sessionKhachHang')
     session_info = ''
-    if session_status:
+    cart = Cart(request)
+    if session_status and cart.__len__():
         session_info = request.session.get('sessionKhachHang')
     else:
         return redirect('cart:cart_detail')
-    return render(request, 'store/checkout.html')
+
+    return render(request, 'store/checkout.html', {'session_info': session_info})
 
 
+@require_POST
 def success(request):
     # Kiểm tra trạng thái đăng nhập của khách hàng
     session_status = check_session(request, 'sessionKhachHang')
