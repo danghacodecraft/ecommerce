@@ -64,23 +64,13 @@
                                 <div class="product-item">
                                     <div class="product-title" style="height: 110px;">
                                         <a href="{% url 'store:product_detail' product.pk %}">{{ product.name }}</a>
-                                        {% comment %} <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div> {% endcomment %}
+
                                     </div>
                                     <div class="product-image">
                                         <a href="{% url 'store:product_detail' product.pk %}">
                                             <img src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
-                                        {% comment %} <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div> {% endcomment %}
+
                                     </div>
                                     <form method="post" action="{% url 'cart:buy_now' product.pk %}">
                                         {% csrf_token %}
@@ -183,23 +173,13 @@
                                 <div class="product-item">
                                     <div class="product-title">
                                         <a href="{% url 'store:product_detail' product.pk %}">{{ product.name }}</a>
-                                        {% comment %} <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div> {% endcomment %}
+
                                     </div>
                                     <div class="product-image">
                                         <a href="product-detail.html">
                                             <img src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
-                                        {% comment %} <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div> {% endcomment %}
+
                                     </div>
                                     <div class="product-price">
                                         <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
@@ -211,33 +191,7 @@
                         </div>
                     </div>
 
-                    {% comment %} <div class="sidebar-widget brands">
-                        <h2 class="title">Our Brands</h2>
-                        <ul>
-                            <li><a href="#">Nulla </a><span>(45)</span></li>
-                            <li><a href="#">Curabitur </a><span>(34)</span></li>
-                            <li><a href="#">Nunc </a><span>(67)</span></li>
-                            <li><a href="#">Ullamcorper</a><span>(74)</span></li>
-                            <li><a href="#">Fusce </a><span>(89)</span></li>
-                            <li><a href="#">Sagittis</a><span>(28)</span></li>
-                        </ul>
-                    </div>
 
-                    <div class="sidebar-widget tag">
-                        <h2 class="title">Tags Cloud</h2>
-                        <a href="#">Lorem ipsum</a>
-                        <a href="#">Vivamus</a>
-                        <a href="#">Phasellus</a>
-                        <a href="#">pulvinar</a>
-                        <a href="#">Curabitur</a>
-                        <a href="#">Fusce</a>
-                        <a href="#">Sem quis</a>
-                        <a href="#">Mollis metus</a>
-                        <a href="#">Sit amet</a>
-                        <a href="#">Vel posuere</a>
-                        <a href="#">orci luctus</a>
-                        <a href="#">Nam lorem</a>
-                    </div>{% endcomment %}
                 </div> 
                 <!-- Side Bar End -->
             </div>

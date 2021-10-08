@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from cart.cart import Cart
 from store.models import Product
 from django.views.decorators.http import require_POST
+from django.conf import settings
 
 
 # Create your views here.
@@ -30,8 +31,6 @@ def cart_detail(request):
         else:
             request.session['cart'] = cart_new
 
-    print(request.session.get('cart'))
-
     return render(request, 'store/cart.html', {'cart': cart})
 
 
@@ -41,6 +40,7 @@ def buy_now(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     if request.POST.get('quantity'):
         cart.add(product=product, quantity=int(request.POST.get('quantity')))
+
     return redirect('cart:cart_detail')
 
 

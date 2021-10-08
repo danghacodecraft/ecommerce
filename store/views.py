@@ -33,6 +33,8 @@ def index(request):
         list_subcategoryid_ddnb.append(item[0])
     list_product_ddnb = Product.objects.filter(subcategory__in=list_subcategoryid_ddnb).order_by('-public_day')[:21]
 
+    print(request.session.get('cart'))
+
     return render(request, 'store/index.html', {
         'list_product_tbgd': list_product_tbgd,
         'list_product_ddnb': list_product_ddnb,

@@ -2,7 +2,459 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6259b8c-6395-47bf-ab8f-4d6f31a4a354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/EStore/settings_20210926181949.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/EStore/settings_20210928183228.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/EStore/settings_20210928183745.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210922151911.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928185426.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190516.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190519.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190855.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190900.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190909.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190913.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190916.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190920.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190930.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190931.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190936.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190949.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190952.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/cart_20210928190954.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/urls_20210926193732.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/urls_20210928174721.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/urls_20210928174730.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210926193636.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174355.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174359.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174403.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174411.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174450.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174453.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174459.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174504.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174506.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174508.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174515.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174518.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174529.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174536.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174541.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174545.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174552.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174758.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174916.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174952.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928174958.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175104.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175120.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175125.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175134.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175137.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175139.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175141.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175144.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175148.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175152.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175222.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175236.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175325.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175341.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175358.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175359.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175406.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175454.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175501.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175517.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175532.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175608.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175713.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175717.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175721.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928175723.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180621.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180740.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180746.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180815.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180821.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180823.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180825.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180827.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180853.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928180906.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928184833.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928184855.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191049.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191053.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191618.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191621.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191631.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928191634.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/cart/views_20210928192511.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210929200553.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152224.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152228.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152231.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152259.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152311.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152312.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152316.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/admin_20210930152317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152339.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152358.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152401.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152414.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152417.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152422.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152427.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152428.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152430.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152440.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152442.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152443.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152540.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152543.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152559.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152609.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152617.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152625.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152633.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152638.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152639.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152640.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152838.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152839.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152844.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152847.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152849.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152851.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152855.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152858.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152902.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152905.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152907.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152913.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152917.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152920.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152922.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152928.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152930.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152931.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152945.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152946.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152954.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152956.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930152957.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153009.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153012.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153017.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153019.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153023.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153031.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153036.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153039.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153044.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153049.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153055.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153109.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153110.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153113.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153117.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153128.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153130.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153139.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153144.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153145.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153155.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153157.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153206.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153212.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153230.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153231.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153234.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153238.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153249.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153253.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153256.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153259.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153308.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153310.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/checkout/forms_20210930153326.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/customers/admin_20210919184033.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/customers/admin_20210928173504.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/customers/admin_20210928173506.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/customers/admin_20210928173528.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210913103018.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173306.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173318.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173320.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173325.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173326.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173328.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173342.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/admin_20210928173432.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210926204647.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174208.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174223.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174228.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174246.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174252.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174623.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174630.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174634.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174735.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928174736.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175613.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175618.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175623.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175628.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175635.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175638.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928175659.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928180550.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192116.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192122.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192226.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192228.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192607.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/cart_20210928192614.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/checkout_20210929205240.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/checkout_20210930151822.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/checkout_20210930151823.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/checkout_20210930151826.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/checkout_20210930151828.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210925224016.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173750.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173757.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173805.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173807.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173809.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/templates/store/contact_20210928173813.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/urls_20210925174928.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/urls_20210928173917.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/urls_20210928173920.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/urls_20210928173924.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210925230209.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210928173910.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210928174316.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210930154707.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210930154712.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210930154716.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210930154720.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/store/views_20210930154726.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092144.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092149.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092155.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092236.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092239.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092255.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092300.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092304.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092319.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092335.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092345.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092350.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092402.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092420.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092423.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092424.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092433.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092436.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092455.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092511.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092524.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092526.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092531.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092611.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092652.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092725.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092746.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092750.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092754.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092828.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092849.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092852.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092853.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092919.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092922.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092933.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092937.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092951.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092956.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003092959.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093003.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093006.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093008.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093011.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093012.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093014.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093100.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093106.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093119.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093126.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093133.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093212.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093215.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093217.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093426.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093446.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093448.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093450.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093452.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093455.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093459.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093500.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093502.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093551.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093553.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093557.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093601.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093602.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093609.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093613.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093616.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093617.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093622.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093626.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093630.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093648.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093702.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093705.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093708.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093713.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093716.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093721.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093728.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093734.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093820.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093821.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093827.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093834.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093843.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093845.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093846.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003093852.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094002.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094009.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094015.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094018.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094022.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094024.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094032.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094036.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094038.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094043.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094047.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094049.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094052.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094054.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094057.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094147.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094213.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094252.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094300.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094303.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094316.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094321.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094326.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094329.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094334.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094336.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094339.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094344.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094348.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094351.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094354.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094357.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094401.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094403.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094404.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094406.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094408.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094410.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094414.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094421.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094430.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094434.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094438.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094440.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094442.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094445.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094453.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094501.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094505.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094508.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094513.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094514.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094519.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094521.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094546.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094549.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094551.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094606.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094609.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094610.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094612.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094614.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094617.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094626.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094630.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094633.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094641.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094647.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094653.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094654.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094658.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094703.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094705.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094707.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003094951.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095004.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095012.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095014.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095017.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095043.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095046.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095056.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095100.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095108.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095109.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095116.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095117.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095127.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095130.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095138.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095141.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095146.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095148.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095151.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095158.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095201.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095206.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095212.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095217.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/test_20211003095223.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EStore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EStore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/product-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/product-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,94 +498,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/views.py">
+        <entry file="file://$PROJECT_DIR$/cart/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-454">
-              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EStore/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
-              <folding>
-                <element signature="e#307#331#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/templates/store/product-detail.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1160">
+              <caret line="58" column="110" selection-start-line="58" selection-start-column="110" selection-end-line="58" selection-end-column="110" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/templates/store/product-list.html">
+        <entry file="file://$PROJECT_DIR$/cart/cart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="280">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkout/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/customers/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1780">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,10 +530,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+            <state relative-caret-position="140">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkout/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cart/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EStore/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-934">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#307#331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,10 +604,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cart/urls.py" />
-        <option value="$PROJECT_DIR$/cart/cart.py" />
         <option value="$PROJECT_DIR$/EStore/urls.py" />
         <option value="$PROJECT_DIR$/store/templates/store/cart.html" />
-        <option value="$PROJECT_DIR$/store/templates/store/index.html" />
         <option value="$PROJECT_DIR$/checkout/forms.py" />
         <option value="$PROJECT_DIR$/checkout/urls.py" />
         <option value="$PROJECT_DIR$/store/templates/store/checkout.html" />
@@ -180,7 +614,6 @@
         <option value="$PROJECT_DIR$/customers/context_processors.py" />
         <option value="$PROJECT_DIR$/store/models.py" />
         <option value="$PROJECT_DIR$/checkout/views.py" />
-        <option value="$PROJECT_DIR$/cart/views.py" />
         <option value="$PROJECT_DIR$/store/templates/store/login.html" />
         <option value="$PROJECT_DIR$/store/templates/store/contact.html" />
         <option value="$PROJECT_DIR$/checkout/models.py" />
@@ -188,10 +621,20 @@
         <option value="$PROJECT_DIR$/customers/forms.py" />
         <option value="$PROJECT_DIR$/customers/views.py" />
         <option value="$PROJECT_DIR$/store/templates/store/my-account.html" />
-        <option value="$PROJECT_DIR$/store/templates/store/product-list.html" />
-        <option value="$PROJECT_DIR$/store/views.py" />
         <option value="$PROJECT_DIR$/cart/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/store/urls.py" />
+        <option value="$PROJECT_DIR$/.history/store/views_20210928173910.py" />
+        <option value="$PROJECT_DIR$/.history/store/views_20210928174316.py" />
+        <option value="$PROJECT_DIR$/store/templates/store/product-list.html" />
+        <option value="$PROJECT_DIR$/store/templates/store/index.html" />
+        <option value="$PROJECT_DIR$/cart/views.py" />
+        <option value="$PROJECT_DIR$/cart/cart.py" />
+        <option value="$PROJECT_DIR$/store/templates/store/product-detail.html" />
+        <option value="$PROJECT_DIR$/store/views.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/EStore/settings.py" />
       </list>
     </option>
@@ -207,6 +650,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +667,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,6 +678,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Buoi_4\EStore" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -291,27 +739,32 @@
       <workItem from="1633195874715" duration="4554000" />
       <workItem from="1633227564904" duration="22000" />
       <workItem from="1633337788213" duration="4844000" />
+      <workItem from="1633342903055" duration="2757000" />
+      <workItem from="1633455256438" duration="1308000" />
+      <workItem from="1633628340781" duration="8280000" />
+      <workItem from="1633682794461" duration="8185000" />
+      <workItem from="1633698083536" duration="712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64228000" />
+    <option name="totallyTimeSpent" value="85498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1621984" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17225201" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32956153" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.41442716" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32863188" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -352,16 +805,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cart/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -389,18 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/my_module.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://c7239735-37ca-4eb6-af18-7bccebd286a9/schema/main/table/django_session">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2a6ca8d0-004b-493a-be76-875212b7c330">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -415,9 +846,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/index-2.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/ordered_set.py">
@@ -459,40 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart/cart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="160" column="66" selection-start-line="160" selection-start-column="66" selection-end-line="160" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customers/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/templates/store/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -506,23 +900,6 @@
           <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -547,13 +924,6 @@
     <entry file="file://$PROJECT_DIR$/customers/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/_Master.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="96" column="35" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/templates/store/my-account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
@@ -561,39 +931,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customers/views.py">
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2620">
-          <caret line="138" column="18" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/product-detail.html">
+    <entry file="file://$PROJECT_DIR$/exit">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/_Master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4280">
+          <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/product-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -610,9 +975,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/store/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.history/store/views_20210928173910.py" />
+    <entry file="file://$PROJECT_DIR$/.history/store/views_20210928174316.py" />
+    <entry file="file://$PROJECT_DIR$/store/templates/store/index-2.html" />
+    <entry file="file://$PROJECT_DIR$/store/templates/store/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c7239735-37ca-4eb6-af18-7bccebd286a9/schema/main/table/django_session">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="7144e2de-cd0a-47e9-b922-22c2c041f200">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/my_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customers/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/customers/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1780">
+        <state relative-caret-position="326">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -620,44 +1055,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart/views.py">
+    <entry file="file://$PROJECT_DIR$/store/templates/store/product-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        <state relative-caret-position="1220">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/product-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" column="110" selection-start-line="58" selection-start-column="110" selection-end-line="58" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="560">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart/Procfile">
+    <entry file="file://$PROJECT_DIR$/checkout/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime.txt">
+    <entry file="file://$PROJECT_DIR$/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="81" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EStore/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="-934">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#307#331#0" expanded="true" />
           </folding>

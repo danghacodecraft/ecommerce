@@ -27,13 +27,13 @@
                         <div class="img-item">
                             <img src="{% static 'store/images/dung-cu-nha-bep.png' %}" />
                             <a class="img-text" href="">
-                                <p style="font-size: 25px">Đồ dùng nhà bếp</p>
+                                <p>Đồ dùng nhà bếp</p>
                             </a>
                         </div>
                         <div class="img-item">
                             <img src="{% static 'store/images/thiet-bi-gia-dinh.png' %}" />
                             <a class="img-text" href="">
-                                <p style="font-size: 25px">Thiết bị gia đình</p>
+                                <p>Thiết bị gia đình</p>
                             </a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <h1>Gọi cho chúng tôi</h1>
                 </div>
                 <div class="col-md-6">
-                    <a href="tel:0123456789">+012-345-6789</a>
+                    <a href="tel:0123456789">(+84) 349 998 172</a>
                 </div>
             </div>
         </div>
@@ -118,29 +118,25 @@
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
-                                <a href="#">{{ product.name }}</a>
-                                {% comment %} <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div> {% endcomment %}
+                                <a href="{% url 'store:product_detail' product.id %}">{{ product.name }}</a>
+
                             </div>
                             <div class="product-image">
-                                <a href="product-detail.html">
+                                <a href="{% url 'store:product_detail' product.id %}">
                                     <img src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
-                                {% comment %} <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href="#"><i class="fa fa-search"></i></a>
-                                </div> {% endcomment %}
+
                             </div>
-                            <div class="product-price">
-                                <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua ngay</a>
-                            </div>
+                            <form method="post" action="{% url 'cart:buy_now' product.pk %}">
+                                {% csrf_token %}
+                                <div class="product-price">
+                                    <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
+                                    <input type="hidden" name="quantity" value="1">
+                                    <button class="btn" type="submit">
+                                        <i class="fa fa-shopping-cart"></i> Mua ngay
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 {% endfor %}
@@ -158,7 +154,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form">
-                        <input type="email" value="Your email here">
+                        <input type="email" placeholder="Your email here">
                         <button>Submit</button>
                     </div>
                 </div>
@@ -178,25 +174,15 @@
                 {% for product in list_product_tbgd %}
                     <div class="col-lg-3">
                         <div class="product-item">
-                            <div class="product-title" style="height: 110px">W
-                                <a href="#" title="{{ product.name }}">{{ product.name }}</a>
-                                {% comment %} <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div> {% endcomment %}
+                            <div class="product-title">
+                                <a href="{% url 'store:product_detail' product.id %}" title="{{ product.name }}">{{ product.name }}</a>
+
                             </div>
                             <div class="product-image">
-                                <a href="product-detail.html">
+                                <a href="{% url 'store:product_detail' product.id %}">
                                     <img src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
-                                {% comment %} <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href="#"><i class="fa fa-search"></i></a>
-                                </div> {% endcomment %}
+
                             </div>
                             <div class="product-price">
                                 <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
