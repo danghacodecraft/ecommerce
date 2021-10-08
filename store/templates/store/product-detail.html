@@ -27,20 +27,8 @@
                                 <div class="col-md-5">
                                     <div class="product-slider-single normal-slider">
                                         <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                                        {% comment %} <img src="img/product-3.jpg" alt="Product Image">
-                                        <img src="img/product-5.jpg" alt="Product Image">
-                                        <img src="img/product-7.jpg" alt="Product Image">
-                                        <img src="img/product-9.jpg" alt="Product Image">
-                                        <img src="img/product-10.jpg" alt="Product Image"> {% endcomment %}
                                     </div>
-                                    {% comment %} <div class="product-slider-single-nav normal-slider">
-                                        <div class="slider-nav-img"><img src="img/product-1.jpg" alt="Product Image"></div>
-                                        <div class="slider-nav-img"><img src="img/product-3.jpg" alt="Product Image"></div>
-                                        <div class="slider-nav-img"><img src="img/product-5.jpg" alt="Product Image"></div>
-                                        <div class="slider-nav-img"><img src="img/product-7.jpg" alt="Product Image"></div>
-                                        <div class="slider-nav-img"><img src="img/product-9.jpg" alt="Product Image"></div>
-                                        <div class="slider-nav-img"><img src="img/product-10.jpg" alt="Product Image"></div>
-                                    </div> {% endcomment %}
+
                                 </div>
                                 <div class="col-md-7">
                                     <div class="product-content">
@@ -141,13 +129,12 @@
 
                                         </div>
                                         <div class="product-price">
-                                            <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
                                             <form method="post" action="{% url 'cart:buy_now' product.pk %}">
                                                 {% csrf_token %}
                                                 <div class="product-price">
                                                     <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
-                                                    <input type="text" name="quantity" value="1">
-                                                    <button class="btn" type="submit">
+                                                    <input type="hidden" name="quantity" value="1">
+                                                    <button class="btn text-right" type="submit">
                                                         <i class="fa fa-shopping-cart"></i> Mua ngay
                                                     </button>
                                                 </div>
