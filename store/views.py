@@ -33,8 +33,6 @@ def index(request):
         list_subcategoryid_ddnb.append(item[0])
     list_product_ddnb = Product.objects.filter(subcategory__in=list_subcategoryid_ddnb).order_by('-public_day')[:21]
 
-    print(request.session.get('cart'))
-
     return render(request, 'store/index.html', {
         'list_product_tbgd': list_product_tbgd,
         'list_product_ddnb': list_product_ddnb,
@@ -135,8 +133,7 @@ def search(request):
         product_name = request.GET.get('product_name')
         from_price = request.GET.get('from_price')
         to_price = request.GET.get('to_price')
-        print(type(from_price))
-        print(to_price)
+
         if (from_price == '' and to_price == '') or (from_price is None and to_price is None):
             products_search = Product.objects.filter(name__contains=product_name).order_by('-public_day')
             subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + product_name + '"'

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6259b8c-6395-47bf-ab8f-4d6f31a4a354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/EStore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EStore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +126,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EStore/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-934">
+            <state relative-caret-position="-2034">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#307#331#0" expanded="true" />
@@ -199,17 +199,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="EStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EStore" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,21 +276,21 @@
       <workItem from="1633455256438" duration="1308000" />
       <workItem from="1633628340781" duration="8280000" />
       <workItem from="1633682794461" duration="8185000" />
-      <workItem from="1633698083536" duration="1422000" />
+      <workItem from="1633698083536" duration="2040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86180000" />
+    <option name="totallyTimeSpent" value="86798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17225201" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17225201" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.41442716" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.41442716" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32863188" />
@@ -684,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EStore/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-934">
+        <state relative-caret-position="-2034">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#307#331#0" expanded="true" />
