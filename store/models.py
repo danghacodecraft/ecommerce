@@ -7,11 +7,15 @@ from django.utils import timezone
 class Category(models.Model):
     name = models.CharField(max_length=150, unique=True)
 
+    def __str__(self):
+        return self.name
+
 
 class SubCategory(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
     name = models.CharField(max_length=150)
     image = models.ImageField(upload_to='store/images', default='store/images/default.png')
+    slug = models.SlugField(null=True, blank=True)
 
     def __str__(self):
         return self.name

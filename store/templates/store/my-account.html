@@ -1,6 +1,7 @@
 {% extends 'store/_Master.html' %}
 {% load static %}
 {% load humanize %}
+{% load tz %}
 
 {% block title %}Tài khoản của tôi{% endblock title %}
 
@@ -9,9 +10,9 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Products</a></li>
-                <li class="breadcrumb-item active">My Account</li>
+                <li class="breadcrumb-item"><a href="{% url 'store:index' %}">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'store:product_list' 'tat-ca-san-pham' %}">Sản phẩm</a></li>
+                <li class="breadcrumb-item active">Tài khoản của tôi</li>
             </ul>
         </div>
     </div>
@@ -118,7 +119,9 @@
                                             <tr>
                                                 <td>{{ forloop.counter }}</td>
                                                 <td>#{{ order.id }}</td>
-                                                <td>{{ order.created|date:'Y-m-d H:i' }}</td>
+                                                {% localtime on %}
+                                                    <td>{{ order.created|date:'d-m-Y H:i' }}</td>
+                                                {% endlocaltime %}
                                                 <td>{{ order.total|floatformat:0|intcomma }} đ</td>
                                                 <td>
                                                     {% if order.status %}
@@ -138,25 +141,25 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
-                            <h4>Payment Method</h4>
+                            <h4>Phương thức thanh toán</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non. Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien eget arcu rhoncus scelerisque.
+                                Chúng tôi chấp nhận thanh toán trực tiếp khi nhận hàng hoặc thông qua thẻ Visa, MasterCard, PayPal.
                             </p>
                         </div>
                         <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
                             <h4>Address</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h5>Payment Address</h5>
+                                    <h5>Địa chỉ giao hàng</h5>
                                     <p>123 Payment Street, Los Angeles, CA</p>
                                     <p>Mobile: 012-345-6789</p>
-                                    <button class="btn">Edit Address</button>
+                                    <button class="btn">Thay đổi địa chỉ giao hàng</button>
                                 </div>
                                 <div class="col-md-6">
-                                    <h5>Shipping Address</h5>
+                                    <h5>Địa chỉ nhận hàng</h5>
                                     <p>123 Shipping Street, Los Angeles, CA</p>
                                     <p>Mobile: 012-345-6789</p>
-                                    <button class="btn">Edit Address</button>
+                                    <button class="btn">Thay đổi địa chỉ nhận hàng</button>
                                 </div>
                             </div>
                         </div>

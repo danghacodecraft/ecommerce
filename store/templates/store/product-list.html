@@ -28,29 +28,30 @@
                                     <form method="post">
                                         <div class="row">
 
-                                            <div class="col-md-7">
+                                            <div class="col-md-5">
                                                 <div>
-                                                    <h4>{{ subcategory_name }}</h4>
+                                                    <h5>Lọc giá sản phẩm</h5>
+                                                    <p>abc</p>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-2">
+                                            <div class="col-md-3">
                                                 <div class="product-short">
                                                     <div class="form-group">
-                                                        <input type="number" name="from_price" step="10000" min="10000" class="form-control" value="{{ from_price|floatformat:"0" }}" placeholder="Từ giá" style="border: 1px solid #353535; color: #353535;">
+                                                        <input type="number" name="from_price" step="10000" min="10000" class="form-control input-xxlarge" value="{{ from_price|floatformat:"0" }}" placeholder="Từ giá" style="border: 1px solid #353535; color: #353535;">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-3">
                                                 <div class="product-price-range">
                                                     <div class="form-group">
-                                                        <input type="number" name="to_price" step="10000" min="100000" class="form-control" value="{{ to_price|floatformat:"0" }}" placeholder="Đến giá" style="border: 1px solid #353535; color: #353535;">
+                                                        <input type="number" name="to_price" step="10000" min="1000000" class="form-control" value="{{ to_price|floatformat:"0" }}" placeholder="Đến giá" style="border: 1px solid #353535; color: #353535;">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
                                                 <button type="submit" class="btn">Lọc</button>
-                                                <input type="hidden" name="product_name" value="{{ product_name }}">
+                                                <input type="hidden" name="tu_khoa" value="{{ tu_khoa }}">
                                             </div>
 
                                         </div>

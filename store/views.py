@@ -13,12 +13,6 @@ subcategory_list = SubCategory.objects.order_by('name')
 
 
 def index(request):
-    # Kiểm tra trạng thái đăng nhập của khách hàng
-    session_status = check_session(request, 'sessionKhachHang')
-    session_info = ''
-    if session_status:
-        session_info = request.session.get('sessionKhachHang')
-
     # Thiết bị gia đình
     subcategory_ttgd = SubCategory.objects.filter(category=1).values_list('id')
     list_subcategoryid_tbgd = []
@@ -36,22 +30,15 @@ def index(request):
     return render(request, 'store/index.html', {
         'list_product_tbgd': list_product_tbgd,
         'list_product_ddnb': list_product_ddnb,
-        'session_status': session_status,
-        'session_info': session_info,
     })
 
 
-def product_list(request, pk):
-    # Kiểm tra trạng thái đăng nhập của khách hàng
-    session_status = check_session(request, 'sessionKhachHang')
-    session_info = ''
-    if session_status:
-        session_info = request.session.get('sessionKhachHang')
-
+def product_list(request, slug):
     # Products
     products = Product.objects.order_by('-public_day')
-    if pk != 0:
-        products = Product.objects.filter(subcategory_id=pk).order_by('-public_day')
+    if not slug == 'tat-ca-san-pham':
+        subcategory = SubCategory.objects.get(slug=slug)
+        products = Product.objects.filter(subcategory=subcategory).order_by('-public_day')
 
     # Phân trang
     products_per_page = 15
@@ -65,29 +52,22 @@ def product_list(request, pk):
     except EmptyPage:
         products_pager = paginator.page(paginator.num_pages)
 
-    if pk == 0:
+    if slug == 'tat-ca-san-pham':
         list_product = Product.objects.order_by('-public_day')
         subcategory_name = 'Tất cả sản phẩm (' + str(len(list_product)) + ')'
     else:
-        list_product = Product.objects.filter(subcategory=pk).order_by('-public_day')
-        selected_subcategory = SubCategory.objects.get(pk=pk)
+        selected_subcategory = SubCategory.objects.get(slug=slug)
+        list_product = Product.objects.filter(subcategory=selected_subcategory).order_by('-public_day')
         subcategory_name = selected_subcategory.name + ' (' + str(len(list_product)) + ')'
 
     return render(request, 'store/product-list.html', {
         'subcategory_list': subcategory_list,
         'products': products_pager,
         'subcategory_name': subcategory_name,
-        'session_status': session_status,
-        'session_info': session_info,
     })
 
 
 def product_detail(request, pk):
-    # Kiểm tra trạng thái đăng nhập của khách hàng
-    session_status = check_session(request, 'sessionKhachHang')
-    session_info = ''
-    if session_status:
-        session_info = request.session.get('sessionKhachHang')
 
     product = Product.objects.get(pk=pk)
 
@@ -103,8 +83,6 @@ def product_detail(request, pk):
         'subcategory_list': subcategory_list,
         'product': product,
         'related_products': related_products,
-        'session_status': session_status,
-        'session_info': session_info,
         'subcategoryid': subcategoryid,
         'subcategoryname': subcategoryname,
     })
@@ -125,34 +103,38 @@ def contact(request):
 
 def search(request):
     subcategory_name = ''
-    list_product_sidebar = ''
-    product_name = ''
+    tu_khoa = ''
     products_pager = []
-    if request.GET.get('product_name'):
+    if request.GET.get('tu_khoa'):
         # Gán biến
-        product_name = request.GET.get('product_name')
+        tu_khoa = request.GET.get('tu_khoa')
         from_price = request.GET.get('from_price')
         to_price = request.GET.get('to_price')
+        print(tu_khoa)
 
         if (from_price == '' and to_price == '') or (from_price is None and to_price is None):
-            products_search = Product.objects.filter(name__contains=product_name).order_by('-public_day')
-            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + product_name + '"'
+            products_search = Product.objects.filter(name__contains=tu_khoa).order_by('-public_day')
+            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + tu_khoa + '"'
         elif from_price == '' and to_price != '':
-            products_search = Product.objects.filter(Q(name__contains=product_name) & Q(price__lte=int(to_price))).order_by('-public_day')
-            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + product_name + '"' + ' với giá đến ' + intcomma(to_price) + 'đ'
+            products_search = Product.objects.filter(Q(name__contains=tu_khoa)
+                                                     & Q(price__lte=int(to_price))).order_by('-public_day')
+            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + \
+                               tu_khoa + '"' + ' với giá dưới ' + intcomma(to_price) + 'đ'
         elif from_price != '' and to_price == '':
-            products_search = Product.objects.filter(Q(name__contains=product_name) & Q(price__gte=int(from_price))).order_by('-public_day')
-            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + product_name + '"' + ' với giá từ ' + intcomma(from_price) + 'đ'
+            products_search = Product.objects.filter(Q(name__contains=tu_khoa)
+                                                     & Q(price__gte=int(from_price))).order_by('-public_day')
+            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' +\
+                               tu_khoa + '"' + ' với giá từ ' + intcomma(from_price) + 'đ'
         else:
-            products_search = Product.objects.filter(Q(name__contains=product_name) & Q(price__range=(from_price, to_price))).order_by('-public_day')
-            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + product_name + '"' + \
-                               ' với giá từ ' + intcomma(from_price) + 'đ' + ' đến ' + intcomma(to_price) + 'đ'
+            products_search = Product.objects.filter(Q(name__contains=tu_khoa)
+                                                     & Q(price__range=(from_price, to_price))).order_by('-public_day')
+            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + \
+                               tu_khoa + '"' + ' với giá từ ' + intcomma(from_price) + 'đ' + ' đến dưới ' + \
+                               intcomma(to_price) + 'đ'
         # Phân trang
         products_per_page = 15
         page = request.GET.get('page', 1)
         paginator = Paginator(products_search, products_per_page)
-
-        # list_product_sidebar = products_search
 
         try:
             products_pager = paginator.page(page)
@@ -164,5 +146,5 @@ def search(request):
     return render(request, 'store/product-list.html', {
         'products': products_pager,
         'subcategory_name': subcategory_name,
-        'product_name': product_name,
+        'tu_khoa': tu_khoa,
     })

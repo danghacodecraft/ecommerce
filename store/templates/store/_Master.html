@@ -55,7 +55,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
                             <a href="{% url 'store:index' %}" class="nav-item nav-link active">Trang chủ</a>
-                            <a href="{% url 'store:product_list' 0 %}" class="nav-item nav-link">Sản phẩm</a>
+                            <a href="{% url 'store:product_list' 'tat-ca-san-pham' %}" class="nav-item nav-link">Sản phẩm</a>
                             <a href="{% url 'store:contact' %}" class="nav-item nav-link">Liên hệ</a>
                         </div>
                         <div class="navbar-nav ml-auto">
@@ -91,7 +91,7 @@
                     <div class="col-md-6">
                         <div class="search">
                             <form method="get" action="{% url 'store:search' %}">
-                                <input type="text" placeholder="Tìm kiếm sản phẩm..." name="product_name" autocomplete="off" value="{{ product_name }}">
+                                <input type="text" placeholder="Tìm kiếm sản phẩm..." name="tu_khoa" autocomplete="off" value="{{ tu_khoa }}" required>
                                 <button type="submit"><i class="fa fa-search"></i></button>
                                 {% comment %} Bạn đã ghé thăm website này {{ visits }} lần {% endcomment %}
                             </form>

@@ -10,9 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+
 
 load_dotenv()
 
@@ -158,4 +160,3 @@ CKEDITOR_IMAGE_BACKEND = 'pillow'
 # Cart
 CART_SESSION_ID = 'cart'
 
-DATETIME_FORMAT = 'd-m-Y H:i:s'
