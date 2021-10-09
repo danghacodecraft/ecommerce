@@ -187,9 +187,13 @@
                                         <div class="product-price">
                                             <h3>{{ product.price|floatformat:0|intcomma }}<span>đ</span></h3>
                                             <input type="hidden" name="quantity" value="1">
-                                            <a class="btn" type="submit"><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                                            <button class="btn" type="submit"><i class="fa fa-shopping-cart"></i>
+                                                Mua ngay
+                                            </button>
                                         </div>
                                     </form>
+
+
                                 </div>
                             {% endfor %}
                             
