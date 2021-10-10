@@ -73,7 +73,6 @@ def product_detail(request, pk):
 
     # Sản phẩm liên quan
     subcategoryid = product.subcategory_id
-    # related_products = Product.objects.filter(Q(subcategory_id=subcategoryid)).order_by('-public_day')
     related_products = Product.objects.filter(subcategory=subcategoryid).exclude(id=pk).order_by('-public_day')
 
     # Lấy tên danh mục lên Breadcrumb
