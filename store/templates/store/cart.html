@@ -101,10 +101,13 @@
                     <div class="cart-page-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="coupon">
-                                    <input type="text" placeholder="Mã giảm giá">
-                                    <button>Sử dụng</button>
-                                </div>
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <div class="coupon">
+                                        <input type="text" name="coupon" placeholder="Mã giảm giá">
+                                        <button type="submit" name="btnCoupon" value="Mã giảm giá">Sử dụng</button>
+                                    </div>
+                                </form>
                             </div>
                             <div class="col-md-12">
 
@@ -113,8 +116,8 @@
                                     <div class="cart-summary">
                                         <div class="cart-content">
                                             <h1>Thông tin đơn hàng</h1>
-                                            <p>Tạm tính<span>{{ cart.get_total_price|floatformat:0|intcomma }}</span></p>
-                                            <p>Giảm giá<span>0đ</span></p>
+                                            <p>Tạm tính<span>{{ cart.get_total_price|floatformat:0|intcomma }} đ</span></p>
+                                            <p>Giảm giá<span>{{ cart.get_discount|floatformat:0|intcomma }} đ</span></p>
                                             <p>Phí giao hàng<span>0đ</span></p>
                                             <h2>Tổng thành tiền<span>{{ cart.get_final_total_price|floatformat:0|intcomma }}</span></h2>
                                         </div>

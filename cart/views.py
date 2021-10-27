@@ -11,6 +11,40 @@ def cart_detail(request):
     # Giỏ hàng
     cart = Cart(request)
 
+    # Xử lý cập nhật khi có mã giảm giá
+    coupon_code = ''
+    if request.POST.get('btnCoupon'):
+        coupon_code = request.POST.get('coupon')
+        if coupon_code == 'HA':
+            cart_new = {}
+            for item in cart:
+                product_new = {
+                    str(item['product'].pk): {
+                        'quantity': item['quantity'],
+                        'price': str(item['product'].price),
+                        'coupon': '0.9'
+                    }
+                }
+                cart_new.update(product_new)
+                item['coupon'] = 0.9
+            else:
+                request.session['cart'] = cart_new
+        else:
+            cart_new = {}
+            for item in cart:
+                product_new = {
+                    str(item['product'].pk): {
+                        'quantity': item['quantity'],
+                        'price': str(item['product'].price),
+                        'coupon': '1'
+                    }
+                }
+                cart_new.update(product_new)
+                item['coupon'] = 1
+            else:
+                request.session['cart'] = cart_new
+
+
     # Xử lý cập nhật dữ liệu
     if request.POST.get('btnUpdateCart'):
         cart_new = {}

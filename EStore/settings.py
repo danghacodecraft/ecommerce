@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'users',
     'cart',
     'checkout',
+    'payments',
     'dashboard',
     'report',
     'ckeditor',
@@ -181,3 +182,12 @@ REST_FRAMEWORK = {
     #     'rest_framework.authentication.SessionAuthentication'
     # }
 }
+
+# Payments
+if DEBUG:
+    STRIPE_PUBLISHABLE_KEY = 'test_publishable_key'
+    STRIPE_SECRET_KEY = 'test_secret_key'
+# Uncomment these lines if you have a live keys
+# else:
+#     STRIPE_PUBLISHABLE_KEY = 'production_publishable_key'
+#     STRIPE_SECRET_KEY = 'production_secret_key'
