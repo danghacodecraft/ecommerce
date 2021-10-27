@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('customers.urls')),
     path('', include('cart.urls')),
     path('', include('checkout.urls')),
+    path('', include('dashboard.urls')),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 # Static
