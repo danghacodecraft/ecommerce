@@ -19,15 +19,24 @@ from django.urls import path, include, re_path
 from django.conf.urls.static import static
 from django.conf import settings
 
+# API
+from rest_framework import routers
+from store.views import ProductViewSet
+router = routers.DefaultRouter()
+router.register('products', ProductViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('store.urls')),
     path('', include('customers.urls')),
+    path('', include('users.urls')),
     path('', include('cart.urls')),
     path('', include('checkout.urls')),
     path('', include('dashboard.urls')),
     path('', include('report.urls')),
+    path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest-framework')),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 # Static

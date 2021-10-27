@@ -7,6 +7,12 @@ from django.contrib.humanize.templatetags.humanize import intcomma
 # Phân trang
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
+# RSS
+import feedparser
+from django.http import JsonResponse
+from rest_framework import viewsets, permissions
+from store.serializers import ProductSerializer
+
 
 # SubCategory (Dùng chung)
 subcategory_list = SubCategory.objects.order_by('name')
@@ -147,3 +153,26 @@ def search(request):
         'subcategory_name': subcategory_name,
         'tu_khoa': tu_khoa,
     })
+
+
+def read_rss(request):
+    newsfeed = feedparser.parse('http://feeds.feedburner.com/bedtimeshortstories/LYCF')
+    return render(request, 'store/rss.html', {'newsfeed': newsfeed})
+
+
+def products_service(request):
+    products = Product.objects.order_by('-public_day')
+    result_list = list(products.values())
+    return JsonResponse(result_list, safe=False)
+
+
+def product_service(request, pk):
+    product = list(Product.objects.filter(id=pk).values())[0]
+    return JsonResponse(product, safe=False)
+
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.order_by('-public_day')
+    serializer_class = ProductSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    # permission_classes = [permissions.IsAdminUser]
