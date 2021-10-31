@@ -44,7 +44,6 @@ def cart_detail(request):
             else:
                 request.session['cart'] = cart_new
 
-
     # Xử lý cập nhật dữ liệu
     if request.POST.get('btnUpdateCart'):
         cart_new = {}

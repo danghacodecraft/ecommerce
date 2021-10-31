@@ -41,11 +41,22 @@ def index(request):
 
 def product_list(request, slug):
     # Products
+    from_price = request.GET.get('from_price')
+    to_price = request.GET.get('to_price')
+    thong_bao_loc_gia = 'Lọc giá sản phẩm'
+    subcategory = ''
+
     products = Product.objects.order_by('-public_day')
     if not slug == 'tat-ca-san-pham':
         subcategory = SubCategory.objects.get(slug=slug)
         products = Product.objects.filter(subcategory=subcategory).order_by('-public_day')
-
+    if from_price is not None and to_price is not None:
+        products = [product for product in products if float(from_price) <= product.price <= float(to_price)]
+        if len(products) > 0:
+            thong_bao_loc_gia = 'Tìm thấy ' + str(len(products)) + ' sản phẩm từ ' + intcomma(from_price) + 'đ' \
+                                ' đến ' + intcomma(to_price) + ' trong danh mục ' + str(subcategory)
+        else:
+            thong_bao_loc_gia = 'Không tìm thấy sản phẩm nào cả'
     # Phân trang
     products_per_page = 15
     page = request.GET.get('page', 1)
@@ -70,6 +81,7 @@ def product_list(request, slug):
         'subcategory_list': subcategory_list,
         'products': products_pager,
         'subcategory_name': subcategory_name,
+        'thong_bao_loc_gia': thong_bao_loc_gia,
     })
 
 
@@ -108,6 +120,7 @@ def contact(request):
 
 def search(request):
     subcategory_name = ''
+    thong_bao_loc_gia = 'Lọc giá sản phẩm'
     tu_khoa = request.GET.get('tu_khoa')
     products_pager = []
     if request.GET.get('tu_khoa'):
@@ -152,6 +165,7 @@ def search(request):
         'products': products_pager,
         'subcategory_name': subcategory_name,
         'tu_khoa': tu_khoa,
+        'thong_bao_loc_gia': thong_bao_loc_gia,
     })
 
 
