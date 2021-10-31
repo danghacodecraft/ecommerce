@@ -3,7 +3,8 @@ from cart.cart import Cart
 from store.my_module import *
 from .models import Order, OrderItem
 from django.views.decorators.http import require_POST
-from decimal import Decimal
+from EStore.settings import EMAIL_HOST_USER
+from django.core.mail import EmailMessage
 
 
 def checkout(request):
@@ -41,8 +42,38 @@ def success(request):
     for item in cart:
         order_item = OrderItem.objects.create(product=item['product'], order=order, price=item['total_price'], quantity=item['quantity'])
         order_item.save()
-    else:
-        cart.clear()
+    subject = 'Chúc mừng ' + order.first_name + ' ' + order.last_name + ' đặt hàng thành công'
+    content = '<p>' + order.address + ', tổng tiền là: ' + str(order.total) + '</p>'
+    content += '''
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Tên sản phẩm</th>
+              <th scope="col">Số lượng</th>
+              <th scope="col">Đơn giá</th>
+              <th scope="col">Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>'''
+    for item in cart:
+        content += '''<tr>
+          <th scope="row">1</th>
+          <td>''' + str(item['product']) + '''</td>
+          <td>''' + str(item['quantity']) + '''</td>
+          <td>''' + str(item['product'].price) + '''</td>
+          <td>''' + str(item['total_price']) + '''</td>
+        </tr>'''
+    content += '''</tbody>
+        </table>
+
+    '''
+
+    msg = EmailMessage(subject, content, EMAIL_HOST_USER, [order.username])
+    msg.content_subtype = 'html'
+    msg.send()
+
+    cart.clear()
 
     return render(request, 'store/success.html')
 
