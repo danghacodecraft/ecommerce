@@ -128,7 +128,7 @@ def search(request):
         elif from_price != '' and to_price == '':
             products_search = Product.objects.filter(Q(name__contains=tu_khoa)
                                                      & Q(price__gte=int(from_price))).order_by('-public_day')
-            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' +\
+            subcategory_name = str(len(products_search)) + ' sản phẩm với từ khóa "' + \
                                tu_khoa + '"' + ' với giá từ ' + intcomma(from_price) + 'đ'
         else:
             products_search = Product.objects.filter(Q(name__contains=tu_khoa)

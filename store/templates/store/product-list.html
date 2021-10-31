@@ -44,7 +44,7 @@
                                             <div class="col-md-3">
                                                 <div class="product-price-range">
                                                     <div class="form-group">
-                                                        <input type="number" name="to_price" step="10000" min="1000000" class="form-control" value="{{ to_price|floatformat:"0" }}" placeholder="Đến giá" style="border: 1px solid #353535; color: #353535;">
+                                                        <input type="number" name="to_price" step="100000" min="100000" class="form-control" value="{{ to_price|floatformat:"0" }}" placeholder="Đến giá" style="border: 1px solid #353535; color: #353535;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -121,11 +121,14 @@
                                             {% if i < products.number|add:"5" %}
                                                 {% if products.number == i %}
                                                     <li class="page-item active">
-                                                        <a class="page-link" href="?page={{ i }}{% if request.GET.product_name %}&product_name={{ request.GET.product_name }}{% endif %}">{{ i }}</a>
+                                                        <a class="page-link" href="?page={{ i }}{% if request.GET.from_price %}&from_price={{ request.GET.from_price }}{% endif %}{% if request.GET.to_price %}&to_price={{ request.GET.to_price }}{% endif %}{% if request.GET.tu_khoa %}&tu_khoa={{ request.GET.tu_khoa }}{% endif %}{% if request.GET.product_name %}&product_name={{ request.GET.product_name }}{% endif %}">{{ i }}</a>
+
                                                     </li>
                                                 {% else %}
                                                     <li class="page-item">
-                                                        <a class="page-link" href="?page={{ i }}{% if request.GET.product_name %}&product_name={{ request.GET.product_name }}{% endif %}">{{ i }}</a>
+                                                        <a class="page-link" href="?page={{ i }}{% if request.GET.from_price %}&from_price={{ request.GET.from_price }}{% endif %}{% if request.GET.to_price %}&to_price={{ request.GET.to_price }}{% endif %}{% if request.GET.tu_khoa %}&tu_khoa={{ request.GET.tu_khoa }}{% endif %}{% if request.GET.product_name %}&product_name={{ request.GET.product_name }}{% endif %}">{{ i }}</a>
+
+
                                                     </li>
                                                 {% endif %}
                                             {% endif %}

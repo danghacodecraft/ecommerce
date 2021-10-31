@@ -4,5 +4,5 @@ from . import views
 app_name = 'users'
 
 urlpatterns = [
-    path('users/', views.users, name='users'),
+    path('nguoi-ban-hang/', views.users, name='users'),
 ]
