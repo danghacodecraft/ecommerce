@@ -108,11 +108,11 @@ def contact(request):
 
 def search(request):
     subcategory_name = ''
-    tu_khoa = ''
+    tu_khoa = request.GET.get('tu_khoa')
     products_pager = []
     if request.GET.get('tu_khoa'):
         # Gán biến
-        tu_khoa = request.GET.get('tu_khoa')
+
         from_price = request.GET.get('from_price')
         to_price = request.GET.get('to_price')
         print(tu_khoa)
