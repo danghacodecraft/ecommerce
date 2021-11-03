@@ -13,4 +13,5 @@ class Customer(models.Model):
     def __str__(self):
         return self.ho + ' ' + self.ten
 
-
+    def token(self):
+        return ''

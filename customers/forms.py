@@ -32,6 +32,15 @@ class FormDangKy(forms.ModelForm):
         "placeholder": "Địa chỉ",
         "rows": 4,
     }))
+    tinh_tp = forms.CharField(label='Tỉnh/TP', widget=forms.Select(attrs={
+        "class": "form-control",
+    }))
+    quan_huyen = forms.CharField(label='Quận/Huyện', widget=forms.Select(attrs={
+        "class": "form-control",
+    }))
+    phuong_xa = forms.CharField(label='Phường/Xã', widget=forms.Select(attrs={
+        "class": "form-control",
+    }))
 
     class Meta:
         model = models.Customer

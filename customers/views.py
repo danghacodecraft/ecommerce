@@ -7,12 +7,48 @@ from django.contrib.auth.hashers import Argon2PasswordHasher, PBKDF2PasswordHash
 
 from customers.forms import FormThongTin
 
+from .models import Customer
 
-# Create your views here.
+
 def login(request):
     session_status = check_session(request, 'sessionKhachHang')
     if session_status:
         return redirect('customers:my_account')
+
+    # Lấy thông tin Tỉnh/TP... từ API
+    link = 'http://api.laptrinhpython.net/vietnam'
+    info = read_json(link)
+
+    # Biến cho provinces
+    provinces = []
+
+    # Biến cho district
+    data_districts = []
+    data_list_districts = []
+
+    # Biến cho ward
+    data_wards = []
+
+    for province in info:
+        provinces.append(province['name'])
+
+        # District
+        districts = []
+        for district in province['districts']:
+            d = district['prefix'] + ' ' + district['name']
+            districts.append(d)
+            data_list_districts.append(d)
+
+            # Ward
+            wards = []
+            for ward in district['wards']:
+                w = ward['prefix'] + ' ' + ward['name']
+                wards.append(w)
+            else:
+                data_wards.append((str(wards).replace('[', '').replace(']', '').replace("'", '').replace(', ', '|')))
+
+        else:
+            data_districts.append((str(districts).replace('[', '').replace(']', '').replace("'", '').replace(', ', '|')))
 
     # Đăng ký
     form = FormDangKy()
@@ -43,7 +79,9 @@ def login(request):
                 post.email = form.cleaned_data['email']
                 post.mat_khau = hasher.encode(form.cleaned_data['mat_khau'], '123')
                 post.dien_thoai = form.cleaned_data['dien_thoai']
-                post.dia_chi = form.cleaned_data['dia_chi']
+                post.dia_chi = form.cleaned_data['dia_chi'] + ', ' + form.cleaned_data['phuong_xa'] + ', ' \
+                               + form.cleaned_data['quan_huyen'] + ', ' + form.cleaned_data['tinh_tp']
+
                 post.save()
                 result_regiter = '''
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -82,6 +120,10 @@ def login(request):
         'form': form,
         'result_regiter': result_regiter,
         'result_login': result_login,
+        'provinces': tuple(provinces),
+        'data_districts': tuple(data_districts),
+        'data_wards': tuple(data_wards),
+        'data_list_districts': data_list_districts,
     })
 
 
@@ -114,8 +156,7 @@ def my_account(request):
             if mat_khau == request.session['sessionKhachHang']['mat_khau']:
                 if form_mk.cleaned_data['mat_khau_moi'] == form_mk.cleaned_data['xac_nhan_mat_khau']:
                     khach_hang = Customer.objects.get(email=request.session['sessionKhachHang']['email'])
-                    print(type(khach_hang))
-                    print(khach_hang)
+
                     khach_hang.mat_khau = hasher.encode(form_mk.cleaned_data['mat_khau_moi'], '123')
                     khach_hang.save()
                     khach_hang_dict = khach_hang.__dict__
@@ -146,3 +187,7 @@ def logout(request):
     if request.session.get('sessionKhachHang'):
         del request.session['sessionKhachHang']
     return redirect('customers:login')
+
+
+def activate(request):
+    return render()
