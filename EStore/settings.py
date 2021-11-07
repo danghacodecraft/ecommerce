@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'payments',
     'dashboard',
     'report',
+    'analysis',
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
