@@ -132,9 +132,9 @@
                                             <input type="hidden" value="{{ c.quantity }}" id="quantity2_{{ product.pk }}" name="quantity2_{{ product.pk }}">
                                             <script>
                                                 $(document).ready(function(){
-                                                    $("#quantity{{ product.pk }}").change(function(){
+                                                    $("#quantity_{{ product.pk }}").change(function(){
                                                         let gia_tri = $("#quantity_{{ product.pk }}").val();
-                                                        $("#quantity2{{ product.pk }}").val(gia_tri)
+                                                        $("#quantity2_{{ product.pk }}").val(gia_tri)
                                                     });
                                                 });
                                                 $(document).ready(function(){
